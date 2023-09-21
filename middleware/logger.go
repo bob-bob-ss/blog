@@ -82,7 +82,7 @@ func Logger() gin.HandlerFunc {
 		} else if statusCode >= 400 {
 			entry.Warn()
 		} else {
-			entry.Info()
+			entry.Info("test")
 		}
 	}
 }
